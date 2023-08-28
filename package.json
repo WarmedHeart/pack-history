@@ -1,0 +1,34 @@
+{
+  "name": "pack-history",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarmedHeart/pack-history.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarmedHeart/pack-history/issues"
+  },
+  "homepage": "https://github.com/WarmedHeart/pack-history#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.22.10",
+    "autoprefixer": "^10.4.15",
+    "core-js": "^3.6.4",
+
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.66.1",
+    "terser": "^5.19.2"
+  }
+}

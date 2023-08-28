@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass --watch css:dist",
+    "build": "npx sass --watch css:dist",
     "postcss": "npx postcss dist/index.css -o postcss/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.66.1",
     "autoprefixer": "^10.4.15",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.28",

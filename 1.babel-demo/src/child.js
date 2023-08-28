@@ -1,1 +1,2 @@
-export default {name: 'hangge', age: '30'}
+exports.name = 'hangge';
+exports.age = '30';
