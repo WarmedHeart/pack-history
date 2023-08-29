@@ -3,4 +3,6 @@ Gulp 是一个流式构建系统，用于自动化地执行常见的开发任务
 
 1. 全局安装 `npm install --global gulp-cli`
 2. 开发安装 `npm install --save-dev gulp`
-3. 
+3. 根据<a href="https://www.gulpjs.com.cn/"> 官网文档 </a>进行所需插件安装配置（此处只是简单配置，执行命令输出，未追求极致的配置）
+
+感觉gulp以组织任务的方式操作流对文件处理还挺方便，待了解有哪些实用性插件再补充 TODO

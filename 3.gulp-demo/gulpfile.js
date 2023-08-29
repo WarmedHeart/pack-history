@@ -1,20 +1,24 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+const { src, dest, parallel } = require('gulp');
+const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass')(require('sass'));
+const postcss = require('gulp-postcss');
 
-// 编译 Sass 文件
-gulp.task('sass', () => {
-  return gulp.src('src/styles/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('dist/css'));
-});
-
-// 压缩 JavaScript 文件
-gulp.task('uglify', () => {
-  return gulp.src('src/scripts/*.js')
+function dueJavaScript() {
+  return src('src/scripts/*.js')
+    .pipe(babel({presets: ['@babel/preset-env']}))
+    .pipe(src('vendor/*.js'))
+    .pipe(dest('output/js/'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/js'));
-});
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(dest('output/js/'));
+}
 
-// 默认任务
-gulp.task('default', gulp.parallel('sass', 'uglify'));
+function dueCss() {
+  return src('src/styles/*.scss')
+    .pipe(sass())
+    .pipe(postcss([require('autoprefixer')]))
+    .pipe(dest('output/css/'));
+}
+exports.default = parallel(dueJavaScript, dueCss);
