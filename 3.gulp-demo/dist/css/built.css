@@ -1,0 +1,18 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: rgb(29, 206, 50);
+  }
+  
+#div2 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+  }
+  
+.index1 {
+  color: yellow;
+}
+.index2 {
+  color: green;
+}
