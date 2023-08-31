@@ -19,6 +19,11 @@ Gulp 是一个流式构建系统，用于自动化地执行常见的开发任务
     gulp-imagemin：图片压缩
     gulp.connect：起server服务调试
 
+优点：对大量源文件进行流式处理，多页面开发的打包
+短板：SPA单页应用模块化分割、优化等方面不足，可使用webpack
+
+【 gulp比作jquery，webpack比作vue、react 】
+
 参考链接：[gulp3 用途](https://juejin.cn/post/6996664034846048287?searchId%253D202308300959053A44B3A1B5B00929C90F)
 
 [gulp版本3、4 区别](https://juejin.cn/post/6844903857479221255?searchId%253D2023083015555950BAB1F92FA072590A48)
